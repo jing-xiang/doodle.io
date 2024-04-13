@@ -11,10 +11,10 @@ In each round, Player A (drawer) uses the mouse to draw on the top OLED display 
 
 At the same time, the guessing phase also runs. Player B has 60 seconds to guess the word or phrase based on Player A's drawing which is viewable on the 2nd Basys board via UART. Player B uses the keyboard input on the other Basys 3 to enter their guess, whereby the keyboard input is shown on another OLED along with hints. The OLED also indicates if the guess is correct or wrong via color coding. If player B successfully guesses, the timer stops. If the guess is correct or the timer runs out, both player A and B has to press btnR to proceed to the next round.
 
-In conclusion, Doodle.io offers a lively and engaging experience, blending drawing and guessing seamlessly on two Basys 3 FPGA boards, making it a delightful adaptation of the beloved skribbl.io game.
+Doodle.io offers a lively and engaging experience, blending drawing and guessing seamlessly on two Basys 3 FPGA boards, making it a delightful adaptation of the beloved skribbl.io game.
 
 Credits: 
-Leong Deng Jun
-He Shaoliang
-Mukund Ayagari
+Leong Deng Jun,
+He Shaoliang,
+Mukund Ayagari,
 Chew Jing Xiang
