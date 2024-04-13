@@ -1,0 +1,99 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Apr 12 15:14:57 2024
+| Host         : JingXiang running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file guesser_main_control_sets_placed.rpt
+| Design       : guesser_main
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    31 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |            4 |
+|     10 |            1 |
+|     12 |            4 |
+|    16+ |           21 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           13014 |         1801 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             542 |           94 |
+| Yes          | No                    | No                     |             486 |           80 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              58 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+----------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|           Clock Signal          |                    Enable Signal                   |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++---------------------------------+----------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+| ~flexible_clock                 |                                                    |                                                         |                1 |              2 |
+| ~typer/test_1/db_clk/cnt_reg[0] | typer/test_1/cnt                                   | typer/test_1/cnt[3]_i_1_n_0                             |                1 |              8 |
+|  clk_IBUF_BUFG                  | typer/test_1/count                                 | typer/test_1/SR[0]                                      |                2 |              8 |
+|  clk_IBUF_BUFG                  | nolabel_line47/UART_UNIT/UART_RX_UNIT/tick_next    |                                                         |                2 |              8 |
+|  clk_IBUF_BUFG                  | nolabel_line47/UART_UNIT/UART_TX_UNIT/tick_next    |                                                         |                2 |              8 |
+|  CLK50MHZ                       | typer/test_1/db_data/count[4]_i_2__0_n_0           | typer/test_1/db_data/count[4]_i_1__0_n_0                |                1 |             10 |
+|  clk_IBUF_BUFG                  |                                                    | game_timer/display_mapping_reg[14]                      |                5 |             12 |
+|  clk_IBUF_BUFG                  |                                                    | game_timer/display_mapping_reg[6]                       |                2 |             12 |
+|  clk_IBUF_BUFG                  | nolabel_line47/UART_UNIT/UART_RX_UNIT/nbits_next   |                                                         |                3 |             12 |
+|  clk_IBUF_BUFG                  | nolabel_line47/UART_UNIT/UART_TX_UNIT/nbits_next   |                                                         |                2 |             12 |
+| ~typer/test_1/db_clk/cnt_reg[0] |                                                    |                                                         |                3 |             18 |
+|  CLK50MHZ                       |                                                    |                                                         |                5 |             22 |
+|  clk_IBUF_BUFG                  | game_timer/display[0]_i_1_n_0                      | btnR_IBUF                                               |                4 |             32 |
+|  CLK50MHZ                       | typer/test_1/keycode[15]_i_1_n_0                   |                                                         |                5 |             32 |
+| ~flexible_clock                 |                                                    | nolabel_line47/oled_display_1/frame_counter[16]_i_1_n_0 |                5 |             34 |
+| ~clk_6p25m_BUFG                 |                                                    |                                                         |                6 |             36 |
+| ~clk_6p25m_BUFG                 | screen/delay[0]_i_1__0_n_0                         |                                                         |                5 |             40 |
+|  clk_IBUF_BUFG                  |                                                    | btnR_IBUF                                               |                5 |             40 |
+| ~flexible_clock                 | nolabel_line47/oled_display_1/delay[0]_i_1_n_0     |                                                         |                5 |             40 |
+|  clk_IBUF_BUFG                  |                                                    | game_timer/one_second_counter[0]_i_1_n_0                |                7 |             54 |
+|  clk_IBUF_BUFG                  |                                                    | nolabel_line47/count[31]_i_1_n_0                        |                8 |             62 |
+| ~clk_6p25m_BUFG                 | screen/state                                       |                                                         |               11 |             64 |
+|  clk_IBUF_BUFG                  |                                                    | screen_clock/clear                                      |                8 |             64 |
+| ~flexible_clock                 | nolabel_line47/oled_display_1/state                |                                                         |               11 |             64 |
+|  clk_IBUF_BUFG                  | nolabel_line47/UART_UNIT/UART_RX_UNIT/data_next    |                                                         |                9 |             80 |
+|  clk_IBUF_BUFG                  |                                                    | game_timer/display_mapping_reg[74]                      |               21 |             84 |
+| ~clk_6p25m_BUFG                 |                                                    | screen/spi_word[39]_i_1__0_n_0                          |               17 |             90 |
+| ~flexible_clock                 |                                                    | nolabel_line47/oled_display_1/spi_word[39]_i_1_n_0      |               16 |             90 |
+|  clk_IBUF_BUFG                  | nolabel_line47/UART_UNIT/UART_RX_UNIT/rx_done_tick |                                                         |                7 |            112 |
+|  clk_IBUF_BUFG                  | nolabel_line47/UART_UNIT/FIFO_RX_UNIT/E[0]         |                                                         |               25 |            126 |
+|  clk_IBUF_BUFG                  |                                                    |                                                         |             1786 |          12936 |
++---------------------------------+----------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+
+

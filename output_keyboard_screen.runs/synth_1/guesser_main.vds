@@ -1,0 +1,1057 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 12 15:10:41 2024
+# Process ID: 28104
+# Current directory: C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.runs/synth_1
+# Command line: vivado.exe -log guesser_main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source guesser_main.tcl
+# Log file: C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.runs/synth_1/guesser_main.vds
+# Journal file: C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source guesser_main.tcl -notrace
+Command: synth_design -top guesser_main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31712 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 362.527 ; gain = 106.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'guesser_main' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/guesser_main.v:25]
+INFO: [Synth 8-6157] synthesizing module 'slow_clock' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/slow_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slow_clock' (1#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/slow_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rx_main' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/rx_main.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (2#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/rx_main.v:61]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/uart.v:43]
+	Parameter DBITS bound to: 40 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter BR_LIMIT bound to: 14 - type: integer 
+	Parameter BR_BITS bound to: 4 - type: integer 
+	Parameter FIFO_EXP bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_rate_generator' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/baud_rate_generator.v:15]
+	Parameter N bound to: 4 - type: integer 
+	Parameter M bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_rate_generator' (3#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/baud_rate_generator.v:15]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/rcv.v:15]
+	Parameter DBITS bound to: 40 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (4#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/rcv.v:15]
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/tx.v:15]
+	Parameter DBITS bound to: 40 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (5#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/tx.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/buffer.v:18]
+	Parameter DATA_SIZE bound to: 40 - type: integer 
+	Parameter ADDR_SPACE_EXP bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/buffer.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (6#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/buffer.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (7#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/uart.v:43]
+WARNING: [Synth 8-3848] Net btn_tick_rd in module/entity rx_main does not have driver. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/rx_main.v:44]
+WARNING: [Synth 8-3848] Net btn_tick_wr in module/entity rx_main does not have driver. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/rx_main.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'rx_main' (8#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/rx_main.v:8]
+INFO: [Synth 8-6157] synthesizing module 'display_keys' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:23]
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:677]
+INFO: [Synth 8-6155] done synthesizing module 'display_keys' (9#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v:23]
+INFO: [Synth 8-6157] synthesizing module 'input_to_screen' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/input_to_screen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'input_to_screen' (10#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/input_to_screen.v:23]
+WARNING: [Synth 8-350] instance 'parser' of module 'input_to_screen' requires 25 connections, but only 24 given [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/guesser_main.v:101]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/timer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (11#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/timer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_input' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/keyboard_input.v:23]
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/keyboard_input.v:134]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (12#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/PS2Receiver.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (13#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/PS2Receiver.v:23]
+WARNING: [Synth 8-324] index 10 out of range [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/keyboard_input.v:894]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/keyboard_input.v:900]
+WARNING: [Synth 8-6014] Unused sequential element word_length_reg was removed.  [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/keyboard_input.v:138]
+WARNING: [Synth 8-6014] Unused sequential element flag_reg was removed.  [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/keyboard_input.v:854]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_input' (14#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/keyboard_input.v:23]
+WARNING: [Synth 8-3848] Net dp in module/entity guesser_main does not have driver. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/guesser_main.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'guesser_main' (15#1) [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/guesser_main.v:25]
+WARNING: [Synth 8-3917] design guesser_main has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design guesser_main has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design guesser_main has port led[8] driven by constant 0
+WARNING: [Synth 8-3331] design timer has unconnected port dp
+WARNING: [Synth 8-3331] design input_to_screen has unconnected port guess_init
+WARNING: [Synth 8-3331] design input_to_screen has unconnected port tw_length[3]
+WARNING: [Synth 8-3331] design input_to_screen has unconnected port tw_length[2]
+WARNING: [Synth 8-3331] design input_to_screen has unconnected port tw_length[1]
+WARNING: [Synth 8-3331] design input_to_screen has unconnected port tw_length[0]
+WARNING: [Synth 8-3331] design display_keys has unconnected port guess_init
+WARNING: [Synth 8-3331] design display_keys has unconnected port clk_6p25m
+WARNING: [Synth 8-3331] design display_keys has unconnected port JB[7]
+WARNING: [Synth 8-3331] design display_keys has unconnected port JB[6]
+WARNING: [Synth 8-3331] design display_keys has unconnected port JB[5]
+WARNING: [Synth 8-3331] design display_keys has unconnected port JB[4]
+WARNING: [Synth 8-3331] design display_keys has unconnected port JB[3]
+WARNING: [Synth 8-3331] design display_keys has unconnected port JB[2]
+WARNING: [Synth 8-3331] design display_keys has unconnected port JB[1]
+WARNING: [Synth 8-3331] design display_keys has unconnected port JB[0]
+WARNING: [Synth 8-3331] design display_keys has unconnected port game_time[5]
+WARNING: [Synth 8-3331] design display_keys has unconnected port game_time[4]
+WARNING: [Synth 8-3331] design display_keys has unconnected port game_time[3]
+WARNING: [Synth 8-3331] design display_keys has unconnected port game_time[2]
+WARNING: [Synth 8-3331] design display_keys has unconnected port game_time[1]
+WARNING: [Synth 8-3331] design display_keys has unconnected port game_time[0]
+WARNING: [Synth 8-3331] design display_keys has unconnected port correct_word[1]
+WARNING: [Synth 8-3331] design display_keys has unconnected port correct_word[0]
+WARNING: [Synth 8-3331] design rx_main has unconnected port JC[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 540.586 ; gain = 284.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin UART_UNIT:reset to constant 0 [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/rx_main.v:6213]
+WARNING: [Synth 8-3295] tying undriven pin UART_UNIT:read_uart to constant 0 [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/rx_main.v:6213]
+WARNING: [Synth 8-3295] tying undriven pin UART_UNIT:write_uart to constant 0 [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/rx_main.v:6213]
+WARNING: [Synth 8-3295] tying undriven pin screen:reset to constant 0 [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/guesser_main.v:55]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 540.586 ; gain = 284.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 540.586 ; gain = 284.379
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'drawer'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'guesser'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[0]'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[5]'. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/guesser_main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/guesser_main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 990.508 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 992.055 ; gain = 735.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 992.055 ; gain = 735.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 992.055 ; gain = 735.848
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "out_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_receiver'
+INFO: [Synth 8-5544] ROM "data_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tick_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nbits_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_transmitter'
+INFO: [Synth 8-5544] ROM "tx_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tick_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nbits_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flexible_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "oled_block1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "display_separator19" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "one_second_enable" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "O" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "target_word" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_transmitter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 992.055 ; gain = 735.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |muxpart__36       |           1|     98288|
+|2     |rx_main__GB1      |           1|     22896|
+|3     |guesser_main__GC0 |           1|     36109|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 10    
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               40 Bit    Registers := 4     
+	               32 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 42    
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 1     
+	   4 Input     40 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 5     
+	  32 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	  21 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 323   
+	  31 Input     16 Bit        Muxes := 20    
+	   2 Input      8 Bit        Muxes := 76    
+	  51 Input      8 Bit        Muxes := 9     
+	  12 Input      8 Bit        Muxes := 10    
+	   3 Input      8 Bit        Muxes := 10    
+	   8 Input      8 Bit        Muxes := 1     
+	  12 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 2     
+	  32 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 4     
+	  51 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 13    
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 30    
+	   3 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 21    
+	  12 Input      1 Bit        Muxes := 2     
+	  51 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module baud_rate_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module uart_transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     40 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+Module fifo__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 5     
+Module fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 5     
+Module Oled_Display__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module rx_main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module display_keys 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 10    
+	   2 Input      7 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 319   
+	  31 Input     16 Bit        Muxes := 20    
+Module input_to_screen 
+Detailed RTL Component Info : 
++---Registers : 
+	              160 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 8     
+Module timer 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	  12 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module debouncer__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PS2Receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+Module keyboard_input 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 40    
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	  51 Input      8 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 62    
+	  12 Input      8 Bit        Muxes := 10    
+	   3 Input      8 Bit        Muxes := 10    
+	   8 Input      8 Bit        Muxes := 1     
+	  51 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	  51 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_TX_UNIT/fifo_full_reg was removed.  [C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/imports/new/buffer.v:58]
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flexible_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "oled_block1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_mapping" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "one_second_enable" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design guesser_main has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design guesser_main has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design guesser_main has port led[8] driven by constant 0
+WARNING: [Synth 8-3331] design guesser_main has unconnected port JC[2]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line47i_1/UART_UNIT/\FIFO_TX_UNIT/current_read_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line47i_1/UART_UNIT/\FIFO_TX_UNIT/current_write_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line47i_1/UART_UNIT/\FIFO_TX_UNIT/current_write_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/UART_UNIT/FIFO_RX_UNIT/current_write_addr_reg[1]' (FDCE) to 'nolabel_line47i_1/UART_UNIT/FIFO_RX_UNIT/current_read_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line47i_1/UART_UNIT/\FIFO_RX_UNIT/current_read_addr_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (FIFO_TX_UNIT/current_read_addr_reg[1]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (FIFO_TX_UNIT/current_write_addr_reg[1]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (FIFO_TX_UNIT/current_write_addr_reg[0]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (FIFO_RX_UNIT/fifo_empty_reg) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (FIFO_RX_UNIT/fifo_full_reg) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (FIFO_RX_UNIT/current_read_addr_reg[1]) is unused and will be removed from module uart_top.
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[0]' (FDE) to 'i_0/typer/colour_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[1]' (FDE) to 'i_0/typer/colour_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[2]' (FDE) to 'i_0/typer/colour_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[3]' (FDE) to 'i_0/typer/colour_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[5]' (FDE) to 'i_0/typer/colour_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[6]' (FDE) to 'i_0/typer/colour_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[7]' (FDE) to 'i_0/typer/colour_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[8]' (FDE) to 'i_0/typer/colour_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[9]' (FDE) to 'i_0/typer/colour_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[11]' (FDE) to 'i_0/typer/colour_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[12]' (FDE) to 'i_0/typer/colour_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[13]' (FDE) to 'i_0/typer/colour_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/test_1/dataprev_reg[3]' (FDE) to 'i_0/typer/test_1/keycode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/test_1/dataprev_reg[0]' (FDE) to 'i_0/typer/test_1/keycode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/test_1/dataprev_reg[1]' (FDE) to 'i_0/typer/test_1/keycode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/test_1/dataprev_reg[2]' (FDE) to 'i_0/typer/test_1/keycode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/test_1/dataprev_reg[6]' (FDE) to 'i_0/typer/test_1/keycode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/test_1/dataprev_reg[4]' (FDE) to 'i_0/typer/test_1/keycode_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/test_1/dataprev_reg[5]' (FDE) to 'i_0/typer/test_1/keycode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/test_1/dataprev_reg[7]' (FDE) to 'i_0/typer/test_1/keycode_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/colour_reg[14]' (FDE) to 'i_0/typer/colour_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/target_word_reg[9][6]' (FDE) to 'i_0/typer/target_word_reg[9][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/target_word_reg[9][7]' (FDE) to 'i_0/typer/target_word_reg[8][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/target_word_reg[9][0]' (FDE) to 'i_0/typer/target_word_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/target_word_reg[9][1]' (FDE) to 'i_0/typer/target_word_reg[9][3]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/target_word_reg[9][2]' (FDE) to 'i_0/typer/target_word_reg[9][5]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/target_word_reg[9][3]' (FDE) to 'i_0/typer/target_word_reg[9][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\typer/target_word_reg[8][7] )
+INFO: [Synth 8-3886] merging instance 'i_0/typer/target_word_reg[8][1]' (FDE) to 'i_0/typer/target_word_reg[8][3]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[0]' (FDR) to 'i_0/key_output/pixel_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[1]' (FDR) to 'i_0/key_output/pixel_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[2]' (FDR) to 'i_0/key_output/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[3]' (FDR) to 'i_0/key_output/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[5]' (FDR) to 'i_0/key_output/pixel_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[6]' (FDR) to 'i_0/key_output/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[7]' (FDR) to 'i_0/key_output/pixel_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[8]' (FDR) to 'i_0/key_output/pixel_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[9]' (FDR) to 'i_0/key_output/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[11]' (FDS) to 'i_0/key_output/pixel_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[12]' (FDS) to 'i_0/key_output/pixel_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[13]' (FDS) to 'i_0/key_output/pixel_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/tw_8_reg[7]' (FD) to 'i_0/typer/tw_9_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/tw_8_reg[3]' (FD) to 'i_0/typer/tw_8_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/tw_9_reg[7]' (FD) to 'i_0/typer/tw_9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/tw_9_reg[0]' (FD) to 'i_0/typer/tw_9_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\typer/tw_9_reg[6] )
+INFO: [Synth 8-3886] merging instance 'i_0/typer/tw_9_reg[5]' (FD) to 'i_0/typer/tw_9_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/tw_9_reg[3]' (FD) to 'i_0/typer/tw_9_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/tw_9_reg[4]' (FD) to 'i_0/typer/tw_9_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/key_output/pixel_data_reg[14]' (FDS) to 'i_0/key_output/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/parser/display_mapping_reg[67]' (FD) to 'i_0/parser/display_mapping_reg[65]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/tw_9_reg[6]' (FD) to 'i_0/parser/display_mapping_reg[78]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\parser/display_mapping_reg[78] )
+INFO: [Synth 8-3886] merging instance 'i_0/parser/display_mapping_reg[77]' (FD) to 'i_0/parser/display_mapping_reg[74]'
+INFO: [Synth 8-3886] merging instance 'i_0/parser/display_mapping_reg[75]' (FD) to 'i_0/parser/display_mapping_reg[76]'
+INFO: [Synth 8-3886] merging instance 'i_0/parser/display_mapping_reg[76]' (FD) to 'i_0/parser/display_mapping_reg[73]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[0]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[1]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[2]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[3]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[4]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[5]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[6]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[7]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[8]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[9]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[10]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[11]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[12]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[13]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47i_1/oled_data_JC_reg[14]' (FDE) to 'nolabel_line47i_1/oled_data_JC_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line47i_1/UART_UNIT/\FIFO_TX_UNIT/current_read_addr_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (FIFO_TX_UNIT/current_read_addr_reg[0]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (FIFO_TX_UNIT/fifo_empty_reg) is unused and will be removed from module uart_top.
+INFO: [Synth 8-3886] merging instance 'i_0/typer/target_word_reg[9][5]' (FDE) to 'i_0/typer/target_word_reg[8][3]'
+INFO: [Synth 8-3886] merging instance 'i_0/typer/tw_8_reg[1]' (FD) to 'i_0/typer/tw_9_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/parser/display_mapping_reg[65]' (FD) to 'i_0/parser/display_mapping_reg[74]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:02:01 . Memory (MB): peak = 992.055 ; gain = 735.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+--------------+---------------+----------------+
+|Module Name    | RTL Object   | Depth x Width | Implemented As | 
++---------------+--------------+---------------+----------------+
+|rx_main        | oled_data_JC | 8192x1        | LUT            | 
+|guesser_main   | oled_data_JC | 8192x1        | LUT            | 
+|keyboard_input | target_word  | 64x8          | LUT            | 
+|keyboard_input | target_word  | 64x8          | LUT            | 
+|keyboard_input | target_word  | 64x8          | LUT            | 
+|keyboard_input | target_word  | 64x8          | LUT            | 
+|keyboard_input | target_word  | 64x8          | LUT            | 
++---------------+--------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------------------+-------------------------+-----------+----------------------+--------------+
+|Module Name                 | RTL Object              | Inference | Size (Depth x Width) | Primitives   | 
++----------------------------+-------------------------+-----------+----------------------+--------------+
+|nolabel_line47i_1/UART_UNIT | FIFO_TX_UNIT/memory_reg | Implied   | 4 x 40               | RAM32M x 7   | 
+|nolabel_line47i_1/UART_UNIT | FIFO_RX_UNIT/memory_reg | Implied   | 4 x 40               | RAM32M x 7   | 
++----------------------------+-------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |muxpart__36       |           1|      6143|
+|2     |rx_main__GB1      |           1|     19852|
+|3     |guesser_main__GC0 |           1|      8438|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:02:09 . Memory (MB): peak = 992.055 ; gain = 735.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:17 ; elapsed = 00:02:36 . Memory (MB): peak = 1095.391 ; gain = 839.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++----------------------------+-------------------------+-----------+----------------------+--------------+
+|Module Name                 | RTL Object              | Inference | Size (Depth x Width) | Primitives   | 
++----------------------------+-------------------------+-----------+----------------------+--------------+
+|nolabel_line47i_1/UART_UNIT | FIFO_TX_UNIT/memory_reg | Implied   | 4 x 40               | RAM32M x 7   | 
+|nolabel_line47i_1/UART_UNIT | FIFO_RX_UNIT/memory_reg | Implied   | 4 x 40               | RAM32M x 7   | 
++----------------------------+-------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |muxpart__36       |           1|      6143|
+|2     |rx_main__GB1      |           1|     19852|
+|3     |guesser_main__GC0 |           1|      6767|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[39]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[38]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[37]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[36]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[35]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[34]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[33]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[32]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[31]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[30]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[29]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[28]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[27]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[26]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[25]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[24]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[23]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[22]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[21]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[20]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[19]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[18]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[17]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[16]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[15]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[14]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[13]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[12]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[11]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[10]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[9]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[8]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[7]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[6]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[5]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[4]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[3]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[2]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[1]) is unused and will be removed from module guesser_main.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line47/UART_UNIT/UART_TX_UNIT/data_reg_reg[0]) is unused and will be removed from module guesser_main.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:24 ; elapsed = 00:02:43 . Memory (MB): peak = 1114.918 ; gain = 858.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:25 ; elapsed = 00:02:44 . Memory (MB): peak = 1114.918 ; gain = 858.711
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:25 ; elapsed = 00:02:45 . Memory (MB): peak = 1114.918 ; gain = 858.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:27 ; elapsed = 00:02:47 . Memory (MB): peak = 1114.918 ; gain = 858.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:27 ; elapsed = 00:02:47 . Memory (MB): peak = 1114.918 ; gain = 858.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:28 ; elapsed = 00:02:49 . Memory (MB): peak = 1114.918 ; gain = 858.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:29 ; elapsed = 00:02:49 . Memory (MB): peak = 1114.918 ; gain = 858.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    69|
+|3     |LUT1   |    33|
+|4     |LUT2   |   235|
+|5     |LUT3   |   205|
+|6     |LUT4   |  6332|
+|7     |LUT5   |   591|
+|8     |LUT6   |  2679|
+|9     |MUXF7  |   937|
+|10    |MUXF8  |   427|
+|11    |RAM32M |     7|
+|12    |FDE_1  |    64|
+|13    |FDRE   |  6982|
+|14    |FDSE   |     4|
+|15    |IBUF   |     5|
+|16    |OBUF   |    37|
+|17    |OBUFT  |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------+------+
+|      |Instance            |Module              |Cells |
++------+--------------------+--------------------+------+
+|1     |top                 |                    | 18614|
+|2     |  game_timer        |timer               |   160|
+|3     |  key_output        |display_keys        |    29|
+|4     |  nolabel_line47    |rx_main             | 15908|
+|5     |    UART_UNIT       |uart_top            |  6498|
+|6     |      BAUD_RATE_GEN |baud_rate_generator |     9|
+|7     |      FIFO_RX_UNIT  |fifo                |  6381|
+|8     |      UART_RX_UNIT  |uart_receiver       |    77|
+|9     |      UART_TX_UNIT  |uart_transmitter    |    31|
+|10    |    oled_display_1  |Oled_Display_1      |   348|
+|11    |  parser            |input_to_screen     |   157|
+|12    |  screen            |Oled_Display        |  1594|
+|13    |  screen_clock      |slow_clock          |    63|
+|14    |  typer             |keyboard_input      |   649|
+|15    |    test_1          |PS2Receiver         |   216|
+|16    |      db_clk        |debouncer           |    15|
+|17    |      db_data       |debouncer_0         |    16|
++------+--------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:29 ; elapsed = 00:02:49 . Memory (MB): peak = 1114.918 ; gain = 858.711
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:05 ; elapsed = 00:02:36 . Memory (MB): peak = 1114.918 ; gain = 407.242
+Synthesis Optimization Complete : Time (s): cpu = 00:02:29 ; elapsed = 00:02:49 . Memory (MB): peak = 1114.918 ; gain = 858.711
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1509 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 71 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 64 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+203 Infos, 106 Warnings, 13 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:33 ; elapsed = 00:02:54 . Memory (MB): peak = 1114.918 ; gain = 871.199
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/chewj/Desktop/final_ver.xpr/output_keyboard_screen/output_keyboard_screen.runs/synth_1/guesser_main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file guesser_main_utilization_synth.rpt -pb guesser_main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1114.918 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 12 15:13:41 2024...

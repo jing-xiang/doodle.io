@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1712905833">
+  <File Type="BITSTR-BMM" Name="guesser_main_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="guesser_main_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="guesser_main_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="guesser_main_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="guesser_main.tcl"/>
+  <File Type="OPT-TIMING" Name="guesser_main_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="guesser_main_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="guesser_main_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="guesser_main_reports.tcl"/>
+  <File Type="OPT-DRC" Name="guesser_main_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="guesser_main.hwdef"/>
+  <File Type="PWROPT-DCP" Name="guesser_main_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="guesser_main_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="guesser_main_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="guesser_main_placed.dcp"/>
+  <File Type="PLACE-IO" Name="guesser_main_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="guesser_main_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="guesser_main_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="guesser_main_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="guesser_main_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="guesser_main_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="guesser_main_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="guesser_main.bgn"/>
+  <File Type="PLACE-TIMING" Name="guesser_main_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="guesser_main_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="guesser_main.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="guesser_main_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="guesser_main_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="guesser_main_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="guesser_main.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="guesser_main_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="guesser_main_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="guesser_main_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="guesser_main_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="guesser_main_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="guesser_main_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="guesser_main.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="guesser_main_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="guesser_main.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="guesser_main_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="guesser_main_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="guesser_main.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="guesser_main_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="guesser_main_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="guesser_main_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="guesser_main_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="guesser_main_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="guesser_main_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="guesser_main_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="guesser_main_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="guesser_main_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="guesser_main_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="guesser_main_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="guesser_main_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="guesser_main_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="guesser_main_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="guesser_main_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="guesser_main_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="guesser_main_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="guesser_main_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="guesser_main_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="guesser_main.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="guesser_main_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="guesser_main.rbt"/>
+  <File Type="BITSTR-NKY" Name="guesser_main.nky"/>
+  <File Type="BG-DRC" Name="guesser_main.drc"/>
+  <File Type="RDI-RDI" Name="guesser_main.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Oled_Display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/Oled_Display.v"/>
+        <Attr Name="ImportTime" Val="1712478770"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PS2Receiver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/PS2Receiver.v"/>
+        <Attr Name="ImportTime" Val="1712491425"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/baud_rate_generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../uartheeheehelphelp.xpr/uartheehee/uartheehee.srcs/sources_1/new/baud_rate_generator.v"/>
+        <Attr Name="ImportTime" Val="1712836123"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/buffer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../uartheeheehelphelp.xpr/uartheehee/uartheehee.srcs/sources_1/new/buffer.v"/>
+        <Attr Name="ImportTime" Val="1712810782"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1712491453"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/display_keys.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/display_keys.v"/>
+        <Attr Name="ImportTime" Val="1712809981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/input_to_screen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/input_to_screen.v"/>
+        <Attr Name="ImportTime" Val="1712806533"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/keyboard_input.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/keyboard_input.v"/>
+        <Attr Name="ImportTime" Val="1712818082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rcv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../uartheeheehelphelp.xpr/uartheehee/uartheehee.srcs/sources_1/new/rcv.v"/>
+        <Attr Name="ImportTime" Val="1712777284"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rx_main.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../output_keyboard_screen.srcs/sources_1/new/rx_main.v"/>
+        <Attr Name="ImportTime" Val="1712858204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/slow_clock.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/slow_clock.v"/>
+        <Attr Name="ImportTime" Val="1712639323"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/timer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/timer.v"/>
+        <Attr Name="ImportTime" Val="1712813878"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../uartheeheehelphelp.xpr/uartheehee/uartheehee.srcs/sources_1/new/tx.v"/>
+        <Attr Name="ImportTime" Val="1712760105"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/uart.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../uartheeheehelphelp.xpr/uartheehee/uartheehee.srcs/sources_1/new/uart.v"/>
+        <Attr Name="ImportTime" Val="1712836107"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/guesser_main.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/guesser_main.v"/>
+        <Attr Name="ImportTime" Val="1712814189"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/flexible_clock.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/flexible_clock.v"/>
+        <Attr Name="ImportTime" Val="1712765238"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/menu_screen.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/menu_screen.v"/>
+        <Attr Name="ImportTime" Val="1712832510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mouse.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/mouse.v"/>
+        <Attr Name="ImportTime" Val="1712835054"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/paint.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/paint.v"/>
+        <Attr Name="ImportTime" Val="1712835064"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pseudo_random.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/pseudo_random.v"/>
+        <Attr Name="ImportTime" Val="1712765328"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/uart_main.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../uartheeheehelphelp.xpr/uartheehee/uartheehee.srcs/sources_1/new/uart_main.v"/>
+        <Attr Name="ImportTime" Val="1712841804"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Ps2Interface.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/Ps2Interface.vhd"/>
+        <Attr Name="ImportTime" Val="1712478734"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mouseCtl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/mouseCtl.vhd"/>
+        <Attr Name="ImportTime" Val="1712478686"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/drawer_main.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/drawer_main.v"/>
+        <Attr Name="ImportTime" Val="1712836783"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_main.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/sources_1/new/top_main.v"/>
+        <Attr Name="ImportTime" Val="1712843345"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/debouce.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../uartheeheehelphelp.xpr/uartheehee/uartheehee.srcs/sources_1/new/debouce.v"/>
+        <Attr Name="ImportTime" Val="1712737626"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fifo_test.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../uartheeheehelphelp.xpr/uartheehee/uartheehee.srcs/sources_1/new/fifo_test.v"/>
+        <Attr Name="ImportTime" Val="1712737626"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/output_keyboard_screen/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../output_keyboard_screen_prompts_working_uart.xpr/output_keyboard_screen/archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1712862792"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="guesser_main"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../Desktop/Uni/Y2S2/EE2026/Project/output_keyboard_screen/output_keyboard_screen.srcs/constrs_1/new/constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1712822578"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
